@@ -1,0 +1,16 @@
+// SampleController.java
+@RestController
+public class SampleController {
+    @GetMapping("/")
+    public String hello() {
+        return "Hello, world!";
+    }
+}
+
+// SampleWebAppApplication.java
+@SpringBootApplication
+public class SampleWebAppApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SampleWebAppApplication.class, args);
+    }
+}
